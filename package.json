@@ -2,9 +2,12 @@
   "name": "community-master-api",
   "version": "1.0.0",
   "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
+  
+    "scripts": {
+  "start": "node server.js",
+  "dev": "nodemon server.js"
+}
+  ,
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",

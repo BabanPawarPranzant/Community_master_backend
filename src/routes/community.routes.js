@@ -3,6 +3,7 @@ const router = express.Router();
 const controller = require("../controllers/community.controller");
 const upload = require("../middlewares/upload.middleware");
 
+//
 router.get("/", controller.getAll);
 router.get("/:id", controller.getById);
 router.post("/", upload.single("profile_image"), controller.create);
